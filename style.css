@@ -5,6 +5,7 @@ html, body {
 
 #time{
   font-size:1cm;
+<<<<<<< HEAD
   margin: 1cm;
   font-size: 1.2cm;
   font-family:cursive;
@@ -12,5 +13,11 @@ html, body {
 
 canvas {
   margin:1cm;
+=======
+  margin: 5%;
+}
+
+canvas {
+>>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
   display: block;
 }

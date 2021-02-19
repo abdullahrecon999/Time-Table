@@ -11,12 +11,17 @@ days={
 };
 
 function setup() {
+<<<<<<< HEAD
   let cnv=createCanvas(900, 500);
+=======
+  let cnv=createCanvas(800, 400);
+>>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
   cnv.position(50,100);
   time=document.getElementById("time");
 }
 
 function draw() {
+<<<<<<< HEAD
   background(250);
 
   strokeWeight(5);
@@ -28,6 +33,9 @@ function draw() {
 }
 
 function drawTime(){
+=======
+  background(240);
+>>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
   let s=second();
   let m=minute();
   let h=hour();
@@ -56,6 +64,7 @@ function getDay(day,month,year){
   h=h%7;
   let d = ((h+5)%7) + 1 
   return days[int(d)];
+<<<<<<< HEAD
 }
 
 var colors = [];
@@ -74,4 +83,6 @@ function mouseWheel(event){
   }
   pos=(pos+1)%5;
   select('body').style('background-color:'+color(colors[pos]));
+=======
+>>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
 }
