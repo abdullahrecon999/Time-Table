@@ -1,27 +1,22 @@
 let time;
 
 days={
-  0:'Saturday',
-  1:'Sunday',
-  2:'Monday',
-  3:'Tuesday',
-  4:'Wednesday',
-  5:'Thursday',
-  6:'Friday'
+  6:'Saturday',
+  0:'Sunday',
+  1:'Monday',
+  2:'Tuesday',
+  3:'Wednesday',
+  4:'Thursday',
+  5:'Friday'
 };
 
 function setup() {
-<<<<<<< HEAD
   let cnv=createCanvas(900, 500);
-=======
-  let cnv=createCanvas(800, 400);
->>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
   cnv.position(50,100);
   time=document.getElementById("time");
 }
 
 function draw() {
-<<<<<<< HEAD
   background(250);
 
   strokeWeight(5);
@@ -33,9 +28,7 @@ function draw() {
 }
 
 function drawTime(){
-=======
-  background(240);
->>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
+
   let s=second();
   let m=minute();
   let h=hour();
@@ -62,9 +55,9 @@ function getDay(day,month,year){
 
   let h = q + 13 * (m + 1) / 5 + k + k / 4 + j / 4 + 5 * j;
   h=h%7;
-  let d = ((h+5)%7) + 1 
+  let d = ((h+5)%7);
+  console.log(d);
   return days[int(d)];
-<<<<<<< HEAD
 }
 
 var colors = [];
@@ -83,6 +76,4 @@ function mouseWheel(event){
   }
   pos=(pos+1)%5;
   select('body').style('background-color:'+color(colors[pos]));
-=======
->>>>>>> 0374bdb43bc23137a7ef952fd86f7fb7b82c8227
 }
