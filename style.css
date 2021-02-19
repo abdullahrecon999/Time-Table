@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#time{
+  font-size:1cm;
+  margin: 1cm;
+  font-size: 1.2cm;
+  font-family:cursive;
+}
+
+canvas {
+  margin:1cm;
+  display: block;
+}
